@@ -6,7 +6,7 @@ class WebCamExecutor(Executor):
 
     vs = None
 
-    def execute(self, executor, **kwargs):
+    def execute(self, **kwargs):
         if kwargs["command"] == "capture":
             return self.capture()
         elif kwargs["command"] == "start":
