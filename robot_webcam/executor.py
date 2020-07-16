@@ -1,5 +1,5 @@
 from imutils.video import VideoStream
-from robot_interfaces.executor import Executor
+from robot_core.executor.executor import Executor
 
 
 class WebCamExecutor(Executor):

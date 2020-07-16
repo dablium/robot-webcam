@@ -1,11 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='robot-core-local',
-    version='0.0.1',
+    name='robot_webcam',
+    version='0.0.4',
     packages=find_packages(),
     install_requires=[
-        'imutils'
+        'imutils',
+        'numpy',
+        'opencv-python'
     ],
     entry_points={
         'console_scripts': [
