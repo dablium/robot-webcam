@@ -7,7 +7,7 @@ class WebCamExecutor(Executor):
     vs = None
 
     def execute(self, **kwargs):
-        if kwargs["command"] == "capture":
+        if kwargs["command"] == "capture":mni
             return self.capture()
         elif kwargs["command"] == "start":
             return self.start()
@@ -15,7 +15,7 @@ class WebCamExecutor(Executor):
             return self.stop()
 
     def start(self):
-        self.vs = VideoStream(src=1).start()
+        self.vs = VideoStream(src=0).start()
 
     def stop(self):
         self.vs.stop()
